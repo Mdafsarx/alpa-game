@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="black">
+<html lang="en" data-theme="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,12 +96,12 @@
 <button class="btn bg-[#894189] text-white px-4 border-0 rounded-full">
 Life
 <img src="Group 23.png" alt="">
-1
+<span id="life">5</span>
 </button>
 <button class="btn  bg-[#360490] text-white px-4 border-0 rounded-full">
 Score
 <img src="monetization_on.png" alt="">
-1
+<span id="score">0</span>
 </button>
  </div>
 <!-- score btn end -->
@@ -110,12 +110,13 @@ Score
  
  
  <!-- game -->
- <section class="flex justify-center items-center min-h-screen hidden" >
+ <section class="flex justify-center items-center min-h-screen hidden"  id="end" onclick="newPlay()">
  
     <div class="text-center space-y-3 bg-[#FFFFFF33] p-5 rounded-xl">
+        <h1>Game over</h1>
         <h1 class="text-7xl text-white">
             <span class="font-extrabold">Score :</span>
-            <span>14</span>
+            <span id="finalScore">14</span>
         </h1>
         <button class="btn bg-[#ffff] font-bold px-7 ">Play again</button>
         <p class="text-2xl text-white">Practice will make you Pro</p>

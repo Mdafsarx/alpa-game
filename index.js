@@ -1,27 +1,18 @@
-// function PlayNow(){
 
-// const home=document.getElementById('Home');
-// home.classList.add('hidden');
+const PlayNow=()=>{
 
-// const playGround=document.getElementById('playground');
-// playGround.classList.remove('hidden')
+    document.getElementById('Home').classList.add('hidden');
+document.getElementById('playground').classList.remove('hidden');
 
-// }
-
-function continueGame(){
-
-const ans=getRandomAlphabet()
-document.getElementById('ALPHABETDisplay').innerText=ans;
-addBackgroundById(ans)
+continueGame();
 
 }
 
+function newPlay(){
 
-
-function PlayNow(){
-
-hideElementById('Home');
-showElementById('playground');
-continueGame()
+removeElementById('end');
+showElementById('playground')
+setTextValue('score',0);
+setTextValue('life',5)
 
 }
